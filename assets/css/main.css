@@ -12,7 +12,7 @@ body{
 /*color del header*/
 header ul{
 	background-color: hsl(360, 80%, 47%);
-	padding: 0px 0px 0px 80px;
+	padding: 0px 0px 0px 84px;
 }
 
 /**/
@@ -28,10 +28,28 @@ header li{
 }
 
 figure{
-	padding: 0px 0px 0px 100px;
+	padding: 23px 0px 0px 90px;
 }
 
 img{
 	width: 200px;
-	border: ;
+	box-sizing: border-box;
+	border: 7px #909497 solid;
+	filter: grayscale();
+	margin: 10px;
 }
+
+article{
+	margin-left: 100px;
+}
+
+div{
+	color: white;
+	display: inline-block;
+	background-color: hsl(360, 80%, 47%);
+	padding: 10px 139px;
+}
+
+
+
+

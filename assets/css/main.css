@@ -28,7 +28,7 @@ header li{
 }
 
 figure{
-	padding: 23px 0px 0px 90px;
+	padding: 23px 0px 16px 90px;
 }
 
 img{
@@ -39,17 +39,41 @@ img{
 	margin: 10px;
 }
 
-article{
+#botones{
 	margin-left: 100px;
 }
 
-div{
+#botones div{
+	box-sizing: border-box;
 	color: white;
 	display: inline-block;
 	background-color: hsl(360, 80%, 47%);
-	padding: 10px 139px;
+	padding: 10px 141.5px;
+	font-size: 15px;
 }
 
+#parrafos{
+	margin-left: 100px;
+	box-sizing: content-box;
+}
+
+#parrafos div{
+	display: inline-block;
+	width: 532px;
+	text-align: justify;
+	color: white;
+	font-size: 14px;
+}
+
+#texto1{
+	margin-right: 15px;
+	margin-top: 20px;
+}
+
+#texto2{
+	margin-left: 15px;
+	margin-top: 20px;
+}
 
 
 

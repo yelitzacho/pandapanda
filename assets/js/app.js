@@ -12,12 +12,14 @@ window.addEventListener("load", function(evento){
 		img.setAttribute('src',urlImg);
 
 		figure.appendChild(img);
-		figure.setAttribute('class','img-panda');
 
 		span.innerText = "X";
+		span.setAttribute('class','equis');
+
+		figure.setAttribute('class','fotospanda');
 		figure.appendChild(span);
 
-		imagenes.appendChild(figure);
+		imagenes.appendChild(figure);	
 	};
 
 	var parrafOrigen = document.getElementById("texto1");
@@ -33,7 +35,7 @@ window.addEventListener("load", function(evento){
 		} else {
 			parrafOrigen.style.display = "none";
 		}
-	})
+	});
 	
 	mostrarHistoria.addEventListener("click", function(){
 		if (parrafoHistoria.style.display === "none") {
@@ -41,12 +43,23 @@ window.addEventListener("load", function(evento){
 		} else {
 			parrafoHistoria.style.display = "none";
 		}
-	})
+	});
+
+	var ocultarFotos = document.getElementsByClassName("fotospanda");
+	var equis = document.getElementsByClassName("equis");
+
+	for (var i = 0; i < equis.length; i++) {
+		equis[i].addEventListener("click", function(e){
+			console.log(e.target);
+				e.target.parentNode.style.display = "none";
+		});
+	};
 
 	var mostrarRestaurar = document.getElementById("restaurar");
 
 	mostrarRestaurar.addEventListener("click", function (){
-		imagenes.style.display = "block";
+		for (var i = 0; i < ocultarFotos.length; i++) {
+				ocultarFotos[i].style.display = "inline-block";
+		}
 	});
-
 })

@@ -1,6 +1,26 @@
 window.addEventListener("load", function(evento){
 	evento.preventDefault();
 
+	var imagenes = document.getElementById("imagenes");
+
+	for (var i = 1; i <= 4; i++) {
+		var urlImg = 'assets/img/panda' + i + '.jpg';
+		var figure = document.createElement('figure');
+		var img = document.createElement('img');
+		var span = document.createElement('span');
+
+		img.setAttribute('src',urlImg);
+
+		figure.appendChild(img);
+		figure.setAttribute('class','img-panda');
+
+		span.innerText = "X";
+		figure.appendChild(span);
+
+		imagenes.appendChild(figure);
+
+	};
+
 	var parrafOrigen = document.getElementById("texto1");
 	var parrafoHistoria = document.getElementById("texto2");
 

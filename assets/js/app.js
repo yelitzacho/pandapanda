@@ -18,7 +18,6 @@ window.addEventListener("load", function(evento){
 		figure.appendChild(span);
 
 		imagenes.appendChild(figure);
-
 	};
 
 	var parrafOrigen = document.getElementById("texto1");
@@ -43,5 +42,11 @@ window.addEventListener("load", function(evento){
 			parrafoHistoria.style.display = "none";
 		}
 	})
+
+	var mostrarRestaurar = document.getElementById("restaurar");
+
+	mostrarRestaurar.addEventListener("click", function (){
+		imagenes.style.display = "block";
+	});
 
 })

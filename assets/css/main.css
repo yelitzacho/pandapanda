@@ -11,7 +11,7 @@ body{
 
 /*color del header*/
 header ul{
-	background-color: hsl(360, 80%, 47%);
+	background-color: #ca3c25;
 	padding: 0px 0px 0px 84px;
 }
 
@@ -27,16 +27,29 @@ header li{
 	padding: 25px 15px;
 }
 
+#imagenes{
+	height: 250px;
+}
+
 figure{
-	padding: 23px 0px 16px 90px;
+	top: 25px;
+	left: 99px;
+	position: relative;
 }
 
 img{
+	position: absolute;
 	width: 200px;
 	box-sizing: border-box;
 	border: 7px #909497 solid;
 	filter: grayscale();
-	margin: 10px;
+}
+
+span{
+	position: absolute;
+	top: 4px;
+	left: 180px;
+
 }
 
 #botones{
@@ -47,13 +60,13 @@ img{
 	box-sizing: border-box;
 	color: white;
 	display: inline-block;
-	background-color: hsl(360, 80%, 47%);
+	background-color: #ca3c25;
 	padding: 10px 141.5px;
 	font-size: 15px;
 }
 
 #parrafos{
-	margin-left: 100px;
+	margin-left: 90px;
 	box-sizing: content-box;
 }
 
@@ -66,14 +79,14 @@ img{
 }
 
 #texto1{
-	margin-right: 15px;
-	margin-top: 20px;
+	margin: 20px 10px 0px 10px;
+
 }
 
 #texto2{
-	margin-left: 15px;
-	margin-top: 20px;
+	margin: 20px 10px 0px 10px;
 }
 
-
-
+.parrafo2{
+	margin-top: 20px;
+}

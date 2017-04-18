@@ -15,26 +15,44 @@
 				<li><a href="">Extinción</a></li>
 			</ul>
 		</header>
-		<section>
+		<section id="imagenes">
 			<figure>
-				<img src="assets/img/panda1.jpg" alt="">
-				<img src="assets/img/panda2.jpg" alt="">
-				<img src="assets/img/panda3.jpg" alt="">
-				<img src="assets/img/panda4.jpg" alt="">
-				<img src="assets/img/panda5.jpg" alt="">
+				<div>
+					<img src="assets/img/panda1.jpg" alt="">
+					<span>X</span>
+				</div>
+				<div>
+					<img src="assets/img/panda2.jpg" alt="">
+					<span>X</span>
+				</div>
+				<div>
+					<img src="assets/img/panda3.jpg" alt="">
+					<span>X</span>
+				</div>
+				<div>
+					<img src="assets/img/panda4.jpg" alt="">
+					<span>X</span>
+				</div>
 			</figure>
+		</section>
+		<section>
 			<article id="botones">
-				<div>Origen</div>
-				<div>Extención</div>
-				<div>Restaurar Fotos</div>
+				<button onclick="mostrarOrigen()">Origen</button>
+				<button onclick="mostrarHistoria()">Extención</button>
+				<button onclick="mostrar()">Restaurar Fotos</button>
 			</article>
 			<article id="parrafos">
-				<div id="texto1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe, quo similique veritatis cum suscipit, illo ab aliquid recusandae repellat odit quod consectetur animi error, obcaecati ipsam eos sapiente praesentium.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi recusandae consequuntur sunt, omnis perspiciatis obcaecati ratione adipisci, necessitatibus, iste ipsum dicta voluptates beatae doloremque itaque incidunt numquam sequi! Accusamus.</div>
-				<div id="texto2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi recusandae consequuntur sunt, omnis perspiciatis obcaecati ratione adipisci, necessitatibus, iste ipsum dicta voluptates beatae doloremque itaque incidunt numquam sequi! Accusamus.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi recusandae consequuntur sunt, omnis perspiciatis obcaecati ratione adipisci, necessitatibus, iste ipsum dicta voluptates beatae doloremque itaque incidunt numquam sequi! Accusamus.</div>
+				<div id="texto1">
+					<div>Origen .- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe, quo similique veritatis cum suscipit, illo ab aliquid recusandae repellat odit quod consectetur animi error, obcaecati ipsam eos sapiente praesentium.</div>
+
+					<div class="parrafo2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi recusandae consequuntur sunt, omnis perspiciatis obcaecati ratione adipisci, necessitatibus, iste ipsum dicta voluptates beatae doloremque itaque incidunt numquam sequi! Accusamus.</div>
+				</div>
+				<div id="texto2">
+					<div>Historia .- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe, quo similique veritatis cum suscipit, illo ab aliquid recusandae repellat odit quod consectetur animi error, obcaecati ipsam eos sapiente praesentium.</div>
+					<div class="parrafo2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi recusandae consequuntur sunt, omnis perspiciatis obcaecati ratione adipisci, necessitatibus, iste ipsum dicta voluptates beatae doloremque itaque incidunt numquam sequi! Accusamus.</div>
+				</div>
 			</article>
 		</section>
-		<script src="assets/js/app.js"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
 	</body>
 </html>
